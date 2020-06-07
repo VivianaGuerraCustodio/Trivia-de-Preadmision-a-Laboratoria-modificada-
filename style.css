@@ -1,0 +1,59 @@
+*{
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-attachment: fixed;
+    background-image: url(/files/background2.png);
+    display:flex;
+    flex-direction: column;
+}
+/* [type="checkbox"]{
+} */
+.view-welcome{
+    text-align: center;
+    margin:1.2em;
+}
+.hiden{
+    display: none;
+}
+.error{
+    color:red;
+}
+a{
+    text-decoration: none;
+}
+.words-welcome{
+    font-size: 2.5em;
+    color: rgb(245, 82, 177);
+}
+p{
+    align-content: center;
+}
+
+.input-nickname{
+    border-radius: 0.9em;
+    padding: 0.7em;
+    margin: 0.5em;
+}
+.send{
+    line-height: 2em;
+    padding-left: 1em;
+    margin: 0.5em;
+    padding-right: 1em;
+}
+.text-align{
+    text-align:center;
+}
+.result-counter{
+    size: 6em;
+}
+.footer{
+    padding: 5px;
+    font-size: 1em;
+    background-color: #f5c2c2;
+}
+.meme{
+    width: 100px;
+    height: 4em;
+}

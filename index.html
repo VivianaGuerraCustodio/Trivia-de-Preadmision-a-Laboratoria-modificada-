@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"> <link/>
+    <link rel="icon" type="image/x-icon" href="files/icono.jpg"/>
+    <title>Programming Questions Trivia</title>
+</head>
+<body>
+    <div class="view-welcome text-align"> 
+      <p class="words-welcome">Bienvenidx a esta divertida trivia</p>
+      <p>Para ofrecerte una mejor personalización, porfavor ingresa tu nombre aqui ⬇️</p>
+      <input type="text" class ="input-nickname" placeholder="Escribe tu nickname aquí">
+      <p class="error hiden"></p>
+      <button type="submit" class="send"> Enviar </button>
+    </div>
+
+ <div class="generalContainer text-align">
+    <div class="questions">
+          <div class="initial hiden">
+            <p> Hola </p>
+            <p class="nickname"></p>
+          </div>
+         <div class="firstQuestion hiden">
+           <p>¿Cuál de estas opciones no es un lenguaje de programación?</p>
+           <input type="checkbox" value="0">Python 🐍
+           <input type="checkbox" value="0">Java ☕
+           <input type="checkbox" value="0">Jquery
+           <input class ="correct" type="checkbox" value="1">Html
+           <img class="meme" src="files/meme2.jpg">
+         </div>
+        <div class="secondQuestion hiden">
+          <p>¿Cuál de estas opciones no es un elemento del Html?</p>
+          <input type="checkbox" value="0">Input
+          <input type="checkbox" value="0">Footer
+          <input type="checkbox" value="0">Header
+          <input class ="correct" type="checkbox" value="1">Class
+          <input type="checkbox" value="0">Body
+       </div>
+        <div class="threeQuestion hiden">
+          <img class="code-example" />
+          <p>¿Cuál de ellos es un editor de código?</p>
+          <input type="checkbox" value="0">Netbeans
+          <input type="checkbox" value="0">Eclipse
+          <input type="checkbox" value="0">Xcode
+          <input class =" correct" type="checkbox" value="1">Atom
+          <input type="checkbox" value="0"> 🤔
+       </div>
+        <div class="fourQuestion hiden">
+          <p>¿Java es lo mismo que Javascript?</p>
+          <input type="checkbox" value="0">Sí
+          <input class =" correct" type="checkbox" value="1">No
+          <input type="checkbox">🤯
+       </div>
+        <div class="fiveQuestion hiden">
+          <p>¿Cuál es la respuesta correcta? </p>
+          <p>const suma = (a, b) => a+b; </p>
+          <p>const resta = (c, callback) => callback(2,4) - c ;</p>
+          <p>resta(5, suma);</p>
+          <input type="checkbox" value="0">undefined
+          <input type="checkbox" value="0">null
+          <input type="checkbox" value="0">3
+          <input class ="correct" type="checkbox" value="1">1
+          <img class="meme"src="files/meme3.jpg">
+       </div>
+  </div>
+</div>
+    <div class="result hiden">
+        <p>Tus resultados son los siguientes :</p>
+        <p class="result-counter" ></p>
+        <div class="ohWow hiden">
+            <img src="/files/ohWow.jpeg"/>
+        </div>
+        <div class="error hiden">
+            <img src="/files/loser.jpg"/>
+        </div>
+    </div>
+    
+    <footer class="text-align">
+        <p class="footer">Creado por VivianaGuerra 2020</p>
+        <p>Feedback por aqui <a href="https://forms.gle/kAbDur3Z199ChTT66"target="_blank">🔗</a></p>
+    </footer> 
+    <script src="app.js"></script>
+    
+</body>
+
+</html>
