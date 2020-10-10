@@ -5,7 +5,7 @@
 
 body {
     background-attachment: fixed;
-    background-image: url(/files/background2.png);
+    background-image: url(https://github.com/VivianaGuerraCustodio/Trivia-de-Preadmision-a-Laboratoria-modificada-/blob/gh-pages/files/background2.png?raw=true);
 }
 
 .generalContainer {
@@ -90,8 +90,6 @@ p {
     left: 0;
     right: 0;
 }
-
-.meme {
-    width: 100px;
-    height: 4em;
+.enphasis{
+    background-color: #f5c2c2;
 }

@@ -39,6 +39,7 @@ firstQuestion.addEventListener('change', (event) => {
         score++ ;
         console.log(score);
     }
+    wordsPersonalized.style.display = 'none';
     secondQuestion.style.display = 'block';
     firstQuestion.style.display = 'none';
 
@@ -50,6 +51,7 @@ secondQuestion.addEventListener('change', (event) => {
         score++ ;
         console.log(score);
     }
+    wordsPersonalized.style.display = 'none';
     secondQuestion.style.display = 'none';
     threeQuestion.style.display = 'block';
 });
@@ -60,6 +62,7 @@ threeQuestion.addEventListener('change', (event) => {
         score++ ;
         console.log(score);
     }
+    wordsPersonalized.style.display = 'none';
     threeQuestion.style.display = 'none';
     fourQuestion.style.display = 'block';
 });
@@ -70,6 +73,7 @@ fourQuestion.addEventListener('change', (event) => {
         score++ ;
         console.log(score);
     }
+    wordsPersonalized.style.display = 'none';
     fourQuestion.style.display = 'none';
     fiveQuestion.style.display = 'block';
 });
