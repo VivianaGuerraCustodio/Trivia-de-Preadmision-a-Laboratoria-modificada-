@@ -14,6 +14,9 @@ const divResult = document.querySelector('.result');
 const resultRight = document.querySelector('.ohWow');
 const resultError = document.querySelector('.error');
 const counterPoints = document.querySelector('.result-counter');
+const enviar = document.querySelector('.enviar');
+const generalContainer = document.querySelector('.generalContainer')
+const questions = document.querySelector('.questions');
 
 buttonSend.addEventListener('click', () => {
     if(inputNickname.value === ''){
@@ -21,6 +24,7 @@ buttonSend.addEventListener('click', () => {
         error.innerHTML = 'Por favor ingresa tu nombre para continuar'
     } else{
         viewWelcome.style.display ='none';
+        generalContainer.style.display = 'block'
         wordsPersonalized.style.display = 'block';
         nickname.innerHTML= inputNickname.value;
         firstQuestion.style.display = 'block';
@@ -30,7 +34,8 @@ buttonSend.addEventListener('click', () => {
 let score = [];
 firstQuestion.addEventListener('change', (event) => {
     event.preventDefault();
-    if(answerCorrect.value === 1){
+   let radiovalue = document.questions.primerQ.value;
+    if(radiovalue == 1){
         score++ ;
         console.log(score);
     }
@@ -40,43 +45,48 @@ firstQuestion.addEventListener('change', (event) => {
 });
 secondQuestion.addEventListener('change', (event) => {
     event.preventDefault();
-    if(answerCorrect.value === 1){
-        score ++;
+    let radiovalue = document.questions.secondQ.value;
+    if(radiovalue == 1){
+        score++ ;
+        console.log(score);
     }
     secondQuestion.style.display = 'none';
     threeQuestion.style.display = 'block';
 });
 threeQuestion.addEventListener('change', (event) => {
     event.preventDefault();
-    if(answerCorrect.value === 1){
-        score ++;
+    let radiovalue = document.questions.threeQ.value;
+    if(radiovalue == 1){
+        score++ ;
+        console.log(score);
     }
     threeQuestion.style.display = 'none';
     fourQuestion.style.display = 'block';
 });
 fourQuestion.addEventListener('change', (event) => {
     event.preventDefault();
-    if(answerCorrect.value === 1){
-        score ++;
+    let radiovalue = document.questions.fourQ.value;
+    if(radiovalue == 1){
+        score++ ;
+        console.log(score);
     }
     fourQuestion.style.display = 'none';
     fiveQuestion.style.display = 'block';
 });
 fiveQuestion.addEventListener('change', (event) => {
     event.preventDefault();
-    if(answerCorrect.value === 1){
-        score ++;
+    let radiovalue = document.questions.fiveQ.value;
+    if(radiovalue == 1){
+        score++ ;
+        console.log(score);
     }
     fiveQuestion.style.display = 'none';
-    if(score === 5){
-        counterPoints ='';
+    generalContainer.style.display = 'none'
+    const resultDiv = document.querySelector('.result');
+    const infoResult = document.createElement('p');
+    infoResult.className = 'result';
+    infoResult.innerHTML = `${`${inputNickname.value}`} , tus resultados son :${`${score}`}`
+    resultDiv.appendChild(infoResult);
     divResult.style.display = 'block';
-    resultRight.style.display = 'block';
-    counterPoints.innerHTML = score;
-    } else {
-        divResult.style.display = 'block';
-        resultRight.style.display = 'none';
-        resultError.style.display = 'block';
-    }
     console.log(score);
 })

@@ -1,59 +1,97 @@
-*{
+* {
     outline: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Handlee', cursive;
 }
-body{
+
+body {
     background-attachment: fixed;
     background-image: url(/files/background2.png);
-    display:flex;
+}
+
+.generalContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    height: 480px;
+    overflow: scroll;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    margin-top: 133px;
+    padding: 35px;
+}
+
+.anouncement {
+    display: flex;
+    align-items: center;
     flex-direction: column;
+    font-size: 20px;
 }
-/* [type="checkbox"]{
-} */
-.view-welcome{
-    text-align: center;
-    margin:1.2em;
+
+.inputs {
+    flex-direction: column;
+    display: flex;
 }
-.hiden{
+
+.view-welcome {
+    margin: 1.2em;
+}
+
+.hiden {
     display: none;
 }
-.error{
-    color:red;
+
+.error {
+    background-color: rgba(255, 99, 71, 0.672);
+    color: rgb(34, 31, 31);
 }
-a{
+
+a {
     text-decoration: none;
 }
-.words-welcome{
+
+.words-welcome {
     font-size: 2.5em;
     color: rgb(245, 82, 177);
 }
-p{
+
+p {
     align-content: center;
 }
 
-.input-nickname{
+.input-nickname {
     border-radius: 0.9em;
     padding: 0.7em;
     margin: 0.5em;
 }
-.send{
+
+.send {
     line-height: 2em;
     padding-left: 1em;
     margin: 0.5em;
     padding-right: 1em;
 }
-.text-align{
-    text-align:center;
+
+.text-align {
+    text-align: center;
 }
-.result-counter{
-    size: 6em;
-}
-.footer{
+
+.footer {
     padding: 5px;
     font-size: 1em;
     background-color: #f5c2c2;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
-.meme{
+
+.meme {
     width: 100px;
     height: 4em;
 }
